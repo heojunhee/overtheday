@@ -1,0 +1,707 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>이유도 모른채 수많은 밤이 어두웠을, 버티는 사람을 위한 노래 (Digital Single Album) </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="851ca8a1-f31f-42c2-b8b7-1465eb5ac7e6" class="page sans"><header><img class="page-cover-image" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25A2%25E1%2586%25AF%25E1%2584%2587%25E1%2585%25A5%25E1%2586%25B7%25E1%2584%258C%25E1%2585%25A1%25E1%2584%258F%25E1%2585%25A6%25E1%2586%25BA_1000.jpg" style="object-position:center 37.739999999999995%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">💿</span></div><h1 class="page-title">이유도 모른채 수많은 밤이 어두웠을, 버티는 사람을 위한 노래 (Digital Single Album) </h1><p class="page-description"></p></header><div class="page-body"><p id="193a4a84-0737-486a-b4ea-69ea7197896a" class="">
+</p><p id="7460e910-8cf7-4438-a460-7576010fe203" class=""><mark class="highlight-orange"><strong>#여는글</strong></mark></p><h1 id="2e511dea-5d0a-48f6-9862-bbab165f1ab1" class="">안녕하세요<br/><br/><span style="border-bottom:0.05em solid"><mark class="highlight-default"><strong>인디뮤지션&amp;독립출판인 허준희</strong></mark></span>입니다.</h1><p id="ddb23e23-05e5-4506-b6b0-8018e333a952" class="">평범함이 특별함이라 믿으며 일상에서 겪을 수 있는 평이한 감정을 글과 음악으로 만들어 부르는 창작자입니다.</p><h1 id="38d49a65-587d-4c2a-a969-9e0c915aa8ec" class=""><span style="border-bottom:0.05em solid"><strong>이로운 우울함</strong></span><strong>에 관한 노래</strong></h1><p id="8210e5ee-4d95-4263-8767-f0ed7cae0668" class="">우울에 관한 노래를 발매했습니다. 정확히는 우울의 필요성과 이로움에 관한 노래입니다. 사회에서 타인에게 인정받기위해 끊임없이 외부로 시선을 두던 우리는 우울하고서야 비로소 자신에게 시선을 돌려 스스로를 돌보기 시작한다는. 우울이 주는 모순에서 영감을 받아 노래를 만들었습니다. 우울은 인사이드아웃의 슬픔이처럼 숨겨야 하는 존재가 아니라 내가 나인 채로 살기 위해 필요한 존재라 말하고 싶었습니다.</p><p id="de210621-9fb8-4667-ae5c-14ef05e3249a" class="">
+</p><ul id="4976e9d4-90b7-4eac-b371-58e88e282c4c" class="toggle"><li><details open=""><summary><mark class="highlight-orange"><em>창작 </em></mark><mark class="highlight-orange"><em><span style="border-bottom:0.05em solid"><strong>#키워드</strong></span></em></mark><mark class="highlight-orange"><em> 모음 (화살표 클릭)</em></mark></summary><p id="b6d57884-e949-47ce-8155-40fe87e3d4be" class="">#공황장애 #불안장애 #실패 #학습된무기력 #사회적인간 #전체주의 #개인주의 #우울은이롭다 #심리 #치유 #공감 #위로 #우울 #음악 #글</p><p id="87cab88c-fefa-49e1-a728-d4e7d89fa1a6" class="">
+</p></details></li></ul><p id="7de441e5-d50c-4f15-89c1-e76824558971" class="">
+</p><hr id="0aeb25b5-47e7-450f-abd3-60a18fc32fca"/><p id="f9658bb5-0b58-4516-acc8-29af0a0cc116" class="">
+</p><p id="39e1b5c8-6d0f-46a7-ae2f-80ea95a2c03f" class=""><mark class="highlight-orange"><strong>#새싱글</strong></mark></p><h1 id="819d15e2-2be8-4ba4-8f58-b9c26c45b4a3" class=""><strong>내게 염려말라 하지를 마오</strong></h1><p id="6478b8cb-88f2-45b4-8ec1-687b207dda45" class="">2024. 02. 13(화)  /  인디뮤직  /  허준희</p><figure id="80c088fd-b1ef-4cd5-bec8-089522151fe6" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A1_%25E1%2584%2592%25E1%2585%25A9%25E1%2586%25BC%25E1%2584%2587%25E1%2585%25A91_%25E1%2584%258B%25E1%2585%25B3%25E1%2586%25B7%25E1%2584%2587%25E1%2585%25A1%25E1%2586%25AB%25E1%2584%258C%25E1%2585%25A1%25E1%2584%258F%25E1%2585%25A6%25E1%2586%25BA2.jpg"><img style="width:1000px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A1_%25E1%2584%2592%25E1%2585%25A9%25E1%2586%25BC%25E1%2584%2587%25E1%2585%25A91_%25E1%2584%258B%25E1%2585%25B3%25E1%2586%25B7%25E1%2584%2587%25E1%2585%25A1%25E1%2586%25AB%25E1%2584%258C%25E1%2585%25A1%25E1%2584%258F%25E1%2585%25A6%25E1%2586%25BA2.jpg"/></a></figure><figure id="3eb83c5e-013f-45ae-b3b9-d470327efccf" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/KakaoTalk_20240125_141326926_01.jpg"><img style="width:1000px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/KakaoTalk_20240125_141326926_01.jpg"/></a></figure><figure id="1267620f-8368-42ed-b1c5-c92952a8071d" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A1_%25E1%2584%2592%25E1%2585%25A9%25E1%2586%25BC%25E1%2584%2587%25E1%2585%25A93_%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25A6%25E1%2584%2583%25E1%2585%25B5%25E1%2586%25BA(%25E1%2584%258C%25E1%2585%25A5%25E1%2584%258B%25E1%2585%25AD%25E1%2586%25BC%25E1%2584%2585%25E1%2585%25A3%25E1%2586%25BC).jpg"><img style="width:1181px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A1_%25E1%2584%2592%25E1%2585%25A9%25E1%2586%25BC%25E1%2584%2587%25E1%2585%25A93_%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25A6%25E1%2584%2583%25E1%2585%25B5%25E1%2586%25BA(%25E1%2584%258C%25E1%2585%25A5%25E1%2584%258B%25E1%2585%25AD%25E1%2586%25BC%25E1%2584%2585%25E1%2585%25A3%25E1%2586%25BC).jpg"/></a><figcaption>&lt;내게 염려말라 하지를 마오&gt; 싱글앨범 자켓 / 소개 / 크레딧</figcaption></figure><h1 id="bdc2d28c-85db-4d40-8221-582e42ba7fb3" class=""><mark class="highlight-default"><strong>■ 음반소개</strong></mark></h1><h2 id="06312ccc-fe20-429d-bd6a-ea9e758b2c99" class=""><strong>이로운 우울감에 관한 노래.</strong></h2><p id="ad0201f4-2500-4a2c-af79-7fb20571e427" class="">우리는 살아가는 동안 필연적으로 무너진다. 기대한 결과를 이루지 못해서. 누군가를 잃어서. 어딘가를 다쳐서 정체하고 만다. 삶은 앞으로 나아가기보단 뒤로 물러나지 않으려고 애쓰는 시간이 대다수이고 벗어나려 할수록 되레 무언가에 억눌리는 듯하다. 하지만 이런 순간이 되어서야 우리는 시선을 자신에게 두기 시작한다. 내가 왜 이런지. 원하는 게 무엇인지 질문한다. 우울해지고서야 비로소 시선을 자신에게 옮기고 자신을 돌본다. 그래서 우울은 고통스럽지만 이롭고, 온전히 나로 서기 위해 잘 보내야 하는 시간이다. 그러니 어서 빨리 우울에서 벗어나라 말하는 이에게 전하자. 나는 여기서 잠시 머무르겠다고. 그러니 <strong>내게 염려말라 하지를 말라고.</strong></p><p id="6fafdd89-2274-4e9f-b17f-17dcde93a4fd" class="">
+</p><h3 id="ad5a57d7-0bd4-4ff0-a6df-0e1b14b3b8a3" class=""><strong>[Track List]</strong></h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="09fea207-c939-4b03-93b2-65be1df9abb5"><div style="font-size:1.5em"><span class="icon">💿</span></div><div style="width:100%">Track 1. 내게 염려말라 하지를 마오</div></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a5620eaa-f3a4-4bf8-89b1-7db2011e0d49"><div style="font-size:1.5em"><span class="icon">💿</span></div><div style="width:100%">Track 2. 내게 염려말라 하지를 마오(Inst.)</div></figure><p id="cf6d7f2b-e261-4b52-9259-093af97b3242" class="">
+</p><h3 id="d50444d4-1296-49ec-882a-85eb0a0ef725" class=""><strong>[Credit]</strong></h3><p id="879f07d6-ed4d-456e-b4db-9150990fa21e" class="">Composed by 허준희<br/>Lyrics by 허준희<br/>Arranged by 허준희, 신기철, 최진우<br/></p><p id="d9417219-e50e-42a3-8dff-147e1bb3628c" class="">Vocal by 허준희<br/>Piano by 신기철 <br/><em>@muziument</em><br/>String by 최진우<br/>Piano Arranged by 신기철 <br/><em>@muziument</em><br/>String Arranged by 최진우<br/></p><p id="c501e4c1-67dc-46ca-a0b4-e18dc3f415b8" class="">Recorded by 김시온 <em>@Tebah Music Studio</em><br/>Mixed &amp; Masted by 김시온 <br/><em>@Tebah Music Studio</em><br/>Artwork by 허준희 <br/><em>@Overtheday Studio</em></p><p id="0ec42460-ebac-4cce-9d67-4d2ecdc249a5" class="">
+</p><p id="eb5f58db-5cc2-4846-9e47-97a985145f2a" class=""><em>(*음원 스트리밍 사이트_공식 음반 소개 글)</em></p><p id="49409b4e-c524-4531-8889-2bd6f45cadd5" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="910eab9f-82b4-41e7-97e4-32c6b4be43ce"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/circle-seven-eighths_gray.svg"/></div><div style="width:100%"><strong>이런 분들을 생각했습니다.</strong></div></figure><ul id="0797597b-8451-4110-9b0c-7c025773e684" class="bulleted-list"><li style="list-style-type:disc"><em>오래 준비한 일을 이루지 못했을 때</em></li></ul><ul id="047034ce-9762-4ac6-89ac-db5cc80a0232" class="bulleted-list"><li style="list-style-type:disc"><em>무언가 시작하지 못할 때</em></li></ul><ul id="54955b7f-b3fa-4a4c-b7e0-7304a4b5ce9e" class="bulleted-list"><li style="list-style-type:disc"><em>우울에 조금 더 빠져들고 싶을 때</em></li></ul><ul id="bd697d3c-128e-48e0-9aa0-15124744a7b4" class="bulleted-list"><li style="list-style-type:disc"><em>얼른 괜찮아지란 말이 고맙지만 듣기 버거운 사람</em></li></ul><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="dc1b2f06-91e2-4be1-ba7a-c902932c34db"><div style="font-size:1.5em"><img class="icon" src="https://www.notion.so/icons/playback-play-button_gray.svg"/></div><div style="width:100%"><strong>노래를 이렇게 들으면 좋습니다.</strong></div></figure><ul id="5aace131-40b5-4f38-9e16-4ccc003b04ee" class="bulleted-list"><li style="list-style-type:disc"><em>하루 중 가장 어둡고 고요한 시간 기다리기</em></li></ul><ul id="77fcb166-9470-4001-b165-54eeb1664c11" class="bulleted-list"><li style="list-style-type:disc"><em>혼자만의 공간에 머물기</em></li></ul><ul id="168fbd8f-f10e-42fc-ba20-3acc3c7db739" class="bulleted-list"><li style="list-style-type:disc"><em>침대에 눕거나, 의자에 앉아 있기</em></li></ul><ul id="007ff03c-9bc6-46d3-a9da-9af4099940e6" class="bulleted-list"><li style="list-style-type:disc"><em>눈 감고 노래를 듣기</em></li></ul><figure id="4deffecd-093d-4a16-b69e-b0cebf4d8060"><div class="source"><a href="https://youtu.be/odgh_FgLQ_U?si=5OJLLdWPXorqmSBY">https://youtu.be/odgh_FgLQ_U?si=5OJLLdWPXorqmSBY</a></div><figcaption>싱글 &lt;내게 염려말라 하지를 마오&gt; 1분 미리듣기</figcaption></figure><p id="3bc0bf6d-c4e7-4abc-a709-9b955f831611" class="">
+</p><hr id="a0d61b6d-8379-4043-8434-4c43a9fea9d5"/><p id="f960d924-fb77-4e97-bb13-e15965fd7c6a" class="">
+</p><p id="f9a1a8ee-bcf4-464b-a837-daa58fe20c46" class=""><mark class="highlight-orange"><strong>#영감의_번안</strong></mark></p><h1 id="61e12b75-3ed8-45e7-9775-8b6d76787ba1" class=""><strong>■ 작업일지</strong></h1><h2 id="91542092-8dd3-482d-81c3-c3b086fb1e81" class=""><em>노래가 되기까지 영감의 ‘번안(飜案)’</em></h2><p id="91f5bef6-1542-4ecd-8bf4-d3c5e989e714" class="">새 싱글<strong> </strong><em><strong>&lt;내게 염려말라 하지를 마오&gt;</strong></em>은 노래가 되기까지 <strong>글과 만화, 전시작까지 여러 형태를 거쳐 번안</strong>되었습니다. 창작하는 행위에 매료된 경험이었어요. 스스로 창작자라 확정할 수 있었던 시간이었습니다. 저의 영감이 노래가 되기까지의 과정을 공유해 드립니다.</p><h2 id="a206f725-cd33-4308-b654-5465c1326e8c" class="">1. 산문시</h2><figure id="3467d462-42b9-4ce8-b330-14340ffff3fb" class="image" style="text-align:left"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_0068.jpeg"><img style="width:528px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_0068.jpeg"/></a><figcaption>우울하고서야 비로소 나의 안위를 걱정하는 나를 발견하고 쓴글. (씀_우울)</figcaption></figure><h1 id="73c09a4b-11e8-4e52-bc2f-741ddf9dc936" class="">&lt;우울&gt; 산문시</h1><p id="899a46a0-7d64-4767-994a-9ee016a86f12" class=""><em><strong>(*2018. 08. 03)</strong></em></p><p id="fa7231d2-57a7-475e-b078-346649e7b801" class="">우울의 이로움에 관한 산문시. 당시 대학원생이던 저는 3시간 이상 잠들지 못하는 불면증에 시달렸습니다. 하던 일이 제대로 해결되지 않고 꼬여만 가는 날이 반복되어 가다 어느날부터 아무것도 하지 않고 방에만 있는 날이 많아졌어요. 친구도 만나지 않고 대학원과 일하던 조교사무실 이외에 사람들과 만나지 않는 날만 몇 년을 보냈던 시절.</p><p id="2399a4fd-9921-4cd0-a715-f9a47ec13f9d" class="">신기하게도 버팀으로 가득했던 우울한 날을 보내면서 사회인으로서 무언가 이뤄야 한다는 압박감 대신 내가 왜 이런지에 집중하는 날을 보냈습니다. 모순 같은, 우울 날이 되어서야 비로소 나를 돌보기 시작했습니다.</p><p id="a1fe37cd-65eb-47e1-a596-ce001e8baa58" class="">
+</p><hr id="925675a9-6ca2-4683-a636-7b9138f9fdcb"/><p id="296f067d-a789-4224-8b8c-aa0ace8ac13a" class="">
+</p><h2 id="e5948058-a3df-42f2-8b6c-8867d39dbe2e" class="">2. 툰(Toon)</h2><figure id="5f654583-6b80-43ce-947d-f0c027b5d79c" class="image" style="text-align:left"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258C%25E1%2585%25A6%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8_%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B9%25E1%2584%2582%25E1%2585%25B3%25E1%2586%25AB_%25E1%2584%258B%25E1%2585%25A1%25E1%2584%2590%25E1%2585%25B3%25E1%2584%258B%25E1%2585%25AF%25E1%2584%258F%25E1%2585%25B3.jpeg"><img style="width:672px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258C%25E1%2585%25A6%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8_%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B9%25E1%2584%2582%25E1%2585%25B3%25E1%2586%25AB_%25E1%2584%258B%25E1%2585%25A1%25E1%2584%2590%25E1%2585%25B3%25E1%2584%258B%25E1%2585%25AF%25E1%2584%258F%25E1%2585%25B3.jpeg"/></a><figcaption>&lt;반가운 우울&gt; 툰 / 표지 이미지</figcaption></figure><h1 id="ec12bd43-c5b1-4289-b093-c9d505a4bf94" class="">&lt;반가운 우울&gt; 툰</h1><p id="b1ed7e2b-6669-4538-9876-dd9e477517dc" class=""><em><strong>(*2020. 04. 05)</strong></em></p><p id="1a2084d4-4ac5-499e-b300-f6213267d337" class="">글로 써둔 ‘우울’을 만화로 그렸습니다. 아내가 함께 인스타툰을 연재해 보지 않겠냐는 제안으로 그려본 것으로 이로운 우울에 관한 내 생각을, 만화를 통해 좀 더 실체화시킨 경험이었습니다.</p><p id="cd120b7b-4f5c-4777-a421-fcc831365e89" class="">
+</p><figure id="fb8f4aef-d21f-4d59-aa37-eba68ab04cc6" class="block-color-orange link-to-page"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%E1%84%87%E1%85%A1%E1%86%AB%E1%84%80%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%AB%20%E1%84%8B%E1%85%AE%E1%84%8B%E1%85%AE%E1%86%AF%20%E1%84%90%E1%85%AE%E1%86%AB%20%E1%84%87%E1%85%A9%E1%84%80%E1%85%B5%20fb8f4aefd21f4d59aa37eba68ab04cc6.html"><span class="icon">🎨</span>&lt;반가운 우울&gt; 툰 보기</a></figure><p id="ad483da4-f68e-48e4-b610-47751c135821" class="">
+</p><hr id="f0cec583-020f-4086-877b-367c775d60c1"/><p id="a86c247e-a419-46af-9fe8-ac6004e20059" class="">
+</p><h2 id="bd19095c-0e49-41ed-aa25-e25116cbfd4b" class="">3. <strong> 글전시와 노래</strong></h2><div id="25d46536-ab02-42b7-8835-5abe79afb004" class="column-list"><div id="9b85be65-9fd2-4722-87bb-dee2889eaf2f" style="width:50%" class="column"><figure id="cb2ff1c2-6681-4275-a76b-fda9ac6f8a70" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_9342.jpg"><img style="width:1080px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_9342.jpg"/></a><figcaption>압구정 빈칸 글전시 단체전 개인 포스터 앞</figcaption></figure></div><div id="d2ef821b-a0b2-4e19-882b-eb2de4fe3c53" style="width:50%" class="column"><figure id="65019c51-3cc3-4d1b-9352-ac79f3358b3a" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_9345.jpg"><img style="width:1080px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_9345.jpg"/></a><figcaption>압구정 빈칸 글전시 단체전 개인 포스터 뒤</figcaption></figure></div></div><h1 id="cfdc25d8-2f08-4624-a29f-490da04036dc" class="">글전시 : 1막과 2막 사이</h1><p id="c8ee65d9-33ee-49dc-b2f7-33171b357dfe" class=""><em><strong>첫 번째 ’버팀‘ 이야기 (*2023. 09. 04-24)</strong></em></p><p id="e414120a-f88d-437a-a35f-b7dd73602c3f" class="">글을 써서 족자를 만들어 관람할 수 있도록 패브릭 족자 형태로 만들었습니다. 버팀에 놓인 ‘J’의 이야기를 읽은 독자가 하단 QR코드를 통해 ‘노래’를 관람하는 읽고 듣는 형태의 참여형 전시 작품을 기획하고 제작했습니다. 이 작품을 통해 추후 책에 들어갈 ‘BGM이 되는 이야기’와 ‘내게 염려말라 하지를 마오’ 노래 작곡을 시도할 수 있었습니다.</p><p id="7415adb1-ba79-4bfa-ae27-ecf28e59a6a3" class="">
+</p><figure id="daa07db4-ec45-40d6-856e-d5fc8ed4add4" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2587%25E1%2585%25A5%25E1%2584%2583%25E1%2585%25A5%25E1%2584%2583%25E1%2585%25A6%25E1%2584%258B%25E1%2585%25B5_%25E1%2584%2591%25E1%2585%25A2%25E1%2584%2587%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25A8_%25E1%2584%2591%25E1%2585%25A9%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A5(%25E1%2584%258C%25E1%2585%25A5%25E1%2584%258B%25E1%2585%25AD%25E1%2586%25BC%25E1%2584%2585%25E1%2585%25A3%25E1%2586%25BC).jpg"><img style="width:500px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2587%25E1%2585%25A5%25E1%2584%2583%25E1%2585%25A5%25E1%2584%2583%25E1%2585%25A6%25E1%2584%258B%25E1%2585%25B5_%25E1%2584%2591%25E1%2585%25A2%25E1%2584%2587%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25A8_%25E1%2584%2591%25E1%2585%25A9%25E1%2584%2589%25E1%2585%25B3%25E1%2584%2590%25E1%2585%25A5(%25E1%2584%258C%25E1%2585%25A5%25E1%2584%258B%25E1%2585%25AD%25E1%2586%25BC%25E1%2584%2585%25E1%2585%25A3%25E1%2586%25BC).jpg"/></a><figcaption>글전시 단체전 &lt;1막과 2막 사이&gt; 전시작 ㅣ 패브릭 포스터 (500*1100mm)</figcaption></figure><h3 id="790f1f1a-9f13-42fa-8709-9c004db8adc1" class=""><strong>#작품설명</strong></h3><p id="3d772164-3971-45f6-9354-74c55d8039c9" class="">나아가기 위해 열심히 노력해 온 J는 자신의 의지와 상관없이 삶의 방향을 잃고 정체한다. 사회에서 정해진 길을 따라 열심히만 하면 앞으로 나아갈 수 있으리라, 더 괜찮아지리라 믿었지만, 누구도 자신의 미래를 책임져 주지 않는다는 걸 깨닫고 나서야 스스로 어떻게 살아야 할까를 고민하기 시작한다. J의 이야기와 음악을 듣고 나의 ‘버팀’에 집중해 보자. <em>(*전시홍보 공식 소개 글)</em></p><p id="878a7015-3ad1-40aa-9847-d4401d0b67ac" class="">
+</p><figure id="2478ab70-1bbd-4ee5-a6a0-02dc221fbf2c"><div class="source"><a href="https://youtube.com/shorts/-HYzdBmOAJc?feature=share">https://youtube.com/shorts/-HYzdBmOAJc?feature=share</a></div><figcaption>글전시 단체전 전시작 &lt;1막과 2막 사이&gt; 관람 안내 </figcaption></figure><h2 id="48384b04-8105-45b4-9b7e-548775ee2d96" class="">📎 전시 노래 라이브 클립</h2><figure id="1c02c5bd-7077-4adf-9b26-9269162c5c36" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_9329.jpg"><img style="width:1509px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/IMG_9329.jpg"/></a><figcaption>1막과 2막 사이 전시작에 삽입한 <strong>&lt;내게 염려말라 하지를 마오&gt;라이브 영상을 관람할 수 있는 QR코드</strong></figcaption></figure><p id="c5281a3a-125c-4823-9bbd-e8f43edafe99" class="">1막과 2막 사이 전시작에 삽입한 <em><strong>&lt;내게 염려말라 하지를 마오&gt; </strong></em><strong>라이브 영상을 관람할 수 있는 QR코드 </strong>. 전시작을 준비하면서 처음으로 1절의 멜로디를 1차로 완성했습니다. 관객은 ‘J’의 버팀을 읽고 공감하는 마음을 지닌 채 하단 QR코드를 통해 라이브 영상을 관람할 수 있다.</p><p id="389f5367-e916-41ec-8d86-0d9d27bedacf" class="">
+</p><figure id="8e67cc3d-ecbd-4845-b164-fc76d6793ff1"><div class="source"><a href="https://www.youtube.com/watch?v=XItr8qsGsN4">https://www.youtube.com/watch?v=XItr8qsGsN4</a></div><figcaption>&lt;내게 염려말라 하지를 마오&gt; 라이브 클립 영상_1차 멜로디 완성</figcaption></figure><p id="02a6cfa6-1501-40ff-937d-ba63d0e40da1" class="">
+</p><hr id="80563dba-311a-416d-a7a0-56f4f9e2e1cb"/><p id="fa72ed62-afc7-4589-b984-0421aab6baf5" class="">
+</p><h2 id="0c46d395-130f-4d9b-b4e6-b8e0524b5e5e" class="">4. 책 &lt;내게 염려말라 하지를 마오&gt;</h2><figure id="518e29c6-2d04-47cf-b81f-6191253ee7c1" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B8_%25E1%2584%2591%25E1%2585%25AD%25E1%2584%258C%25E1%2585%25B5.jpg"><img style="width:3500px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B8_%25E1%2584%2591%25E1%2585%25AD%25E1%2584%258C%25E1%2585%25B5.jpg"/></a><figcaption>&lt;내게 염려말라 하지를 마오&gt; 책 / 표지 (목업작가 qeaql-studio l 출처 Freepik)</figcaption></figure><h1 id="d32654dc-e9b0-4418-a016-f671cfc92b7e" class="">내게 염려말라 하지를 마오 산문집</h1><p id="460566b7-bbf8-4205-b7c1-948ec1c4493b" class=""><em><strong>(*전자책 PDF / 2024. 02. 13)</strong></em></p><p id="e9807402-31b8-4b19-a5ce-5bc4a209b55c" class=""><strong>📓 </strong>미처 담지 못한 노래 속 이야기를 엮어 만든 <strong>산문집</strong>. ‘내게 염려말라 하지를 마오’를 작곡하고 나서도 담지 못한 이야기가 머릿속에 흩어져 있었습니다. 이대로 놔두기엔 조금 아까운. 창작자에겐 아카이빙, 관람자에겐 비하인드인 것들을 머릿속에만 보관하다 잊히게 둘 수 없었어요. 결국 사라지기 전에 얼른 글로 풀어 엮어서 <strong>책 </strong><em><strong>&lt;내게 염려말라 하지를 마오&gt;</strong></em>를 만들었습니다.</p><p id="1d767dd0-0997-4164-b016-4e8eb3e5c87d" class="">
+</p><figure id="2a5b034a-680a-4d3a-8fc6-caaf56e1a291" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B8_%25E1%2584%2582%25E1%2585%25A2%25E1%2584%258C%25E1%2585%25B5.jpg"><img style="width:4000px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B8_%25E1%2584%2582%25E1%2585%25A2%25E1%2584%258C%25E1%2585%25B5.jpg"/></a></figure><figure id="9e0bff0c-124a-43d9-bf1f-dfb563bf01ab" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2589%25E1%2585%25A5%25E1%2584%2586%25E1%2585%25AE%25E1%2586%25AB.jpg"><img style="width:4000px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2589%25E1%2585%25A5%25E1%2584%2586%25E1%2585%25AE%25E1%2586%25AB.jpg"/></a><figcaption>&lt;내게 염려말라 하지를 마오&gt; 책 / 표지와 내지 ( 목업작가 yeven_popow l 출처 Freepik)</figcaption></figure><h1 id="2af27f92-314c-4ade-b937-cd8178b23a4c" class=""><span style="border-bottom:0.05em solid"><strong>이 책은 무료로 공유 드릴 거예요.</strong></span></h1><h2 id="91a97398-97b7-4d7a-ac60-b311776893c1" class="">왜냐면, <strong>여러분께 정말 감사해서요. </strong>그리고 첫 인사를 드리고 싶어서요.</h2><p id="1fa953e9-86de-4797-87b7-81588eb8c858" class="">
+</p><p id="1a8caad7-5153-41d0-8de1-edf1f15d412b" class="">23살부터 39살까지 음악을 하면서 오랫동안 버티느라 공황장애와 불안장애를 겪었습니다. 제가 어떤 예술을 하는 사람인지 도저히 몰라서요. 예술을 통해 어떤 이야기를 주로 감각하고 작품으로 번안하고 표현하고 싶어 하는지 깨닫지 못했었습니다. 마흔에 가까운 나이가 되어서야 어렵게 예술가라는 정체성을 스스로 확립할 수 있었어요. 수많은 날 동안 부서지기만했던 제가 힘겹게 찾는 영감으로 만든 창작물을 혹시 들어주는 이가 계신다면 그런 고마운 이에게 줄 수 있는 게 뭐가 있을까 고민했고, 고민 끝에 제가 만든 책을 무료로 드리기로 했습니다.</p><p id="3dcb6692-b3d0-4cb3-9c79-902e7a73e062" class="">
+</p><p id="b7bac0fc-fc6b-4b0e-b424-8dc2034e7c53" class="">이 노래는 창작자로서 여러분께 보내는 저의 첫인사 같은 작품이니까요.</p><h2 id="bc09e400-26d6-4aa0-837b-9b876d7ef070" class="">앞으로 잘 부탁드린다고요.</h2><h1 id="24b07e5b-01ad-4425-bfb0-8fe984fe23cb" class=""><strong>■ 노래책(전자책)</strong></h1><ul id="9aa16d63-531c-4208-999d-ad3b42dcd965" class="bulleted-list"><li style="list-style-type:disc">제목 : 내게 염려말라 하지를 마오</li></ul><ul id="5d314ef3-6e3a-4487-9a50-5ae19bc0f710" class="bulleted-list"><li style="list-style-type:disc">분야 : 노래 산문집</li></ul><ul id="7233ed25-af49-4160-9615-000806875fba" class="bulleted-list"><li style="list-style-type:disc">장수 : p48 (표지 포함)</li></ul><ul id="aa884f01-9221-4674-8200-e92abc6b8f3d" class="bulleted-list"><li style="list-style-type:disc">금액 : 0원 (PDF 무료배포)</li></ul><ul id="a5b7f705-5b93-4d6d-b2fa-3434322b4e46" class="bulleted-list"><li style="list-style-type:disc">목차</li></ul><figure id="a60bf5f0-6b79-4e2f-a0b4-8dde25225b01" class="image"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B8_%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258E%25E1%2585%25A1.jpg"><img style="width:4000px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25A5%25E1%2586%25B8_%25E1%2584%2586%25E1%2585%25A9%25E1%2586%25A8%25E1%2584%258E%25E1%2585%25A1.jpg"/></a><figcaption>&lt;내게 염려말라 하지를 마오&gt; 책 / 목차 (목업작가 yeven_popow l 출처 Freepik)</figcaption></figure><h1 id="c77f8792-d471-40ca-897e-a48733df15f1" class=""><strong>■ 노래책 무료 다운로드</strong> </h1><figure id="13fce8f8-ac32-4bf7-8ed1-48c9aded7c1b"><div class="block-color-orange_background source"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%2582%25E1%2585%25A2%25E1%2584%258B%25E1%2585%25A7%25E1%2586%25B7%25E1%2584%2586%25E1%2585%25A1_%25E1%2584%2582%25E1%2585%25A9%25E1%2584%2585%25E1%2585%25A2%25E1%2584%258E%25E1%2585%25A2%25E1%2586%25A8_%25E1%2584%2589%25E1%2585%25A2%25E1%2586%25B7%25E1%2584%2591%25E1%2585%25B3%25E1%2586%25AF.pdf">내염마 노래책 샘플.pdf</a></div></figure><p id="69695e53-bf63-458f-895b-6ff21fef905c" class="">
+</p><p id="fbd8666b-4b05-4ef3-be1a-e629e64c9788" class=""><em>© 2024.Junhee_heo all right reserved</em><br/>본 책은 저작자의 지적재산으로서 무단 전재와 복제를 금지하지만 제작자와 창작물을 훼손하지 않는 한 여러분이 원하는대로 마음껏 사용하시고 첨부하실 수 있습니다.<br/></p><p id="047e506d-eac2-47a4-881f-a5a4f8be389b" class="">제 글과 노래를 들어주셔서 다시 한번 감사드립니다.</p><p id="c9611b26-e96d-4303-90d2-73c17d2fc110" class="">
+</p><hr id="7c39781f-8592-41f0-8e1b-ff9a415efd60"/><p id="2c3e33b3-7f5a-4ecc-b731-cd0a29f33ad3" class="">
+</p><p id="60ff0353-3513-44fe-a65e-5c7b66d6c45a" class=""><mark class="highlight-orange"><strong>#창작자_소개</strong></mark></p><h1 id="5f91e5cb-99e6-4cfd-85c2-cb384ca8e6da" class=""><strong>■ 바이오그래피</strong></h1><figure id="ec9508f7-6837-45d0-a064-acb085abbfea" class="image" style="text-align:left"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%2592%25E1%2585%25A5%25E1%2584%258C%25E1%2585%25AE%25E1%2586%25AB%25E1%2584%2592%25E1%2585%25B4_%25E1%2584%2591%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25A9%25E1%2584%2591%25E1%2585%25B5%25E1%2586%25AF_%25E1%2584%258C%25E1%2585%25A1%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25B3%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A1%25E1%2584%258C%25E1%2585%25B5%25E1%2586%25AB.jpg"><img style="width:240px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/%25E1%2584%2592%25E1%2585%25A5%25E1%2584%258C%25E1%2585%25AE%25E1%2586%25AB%25E1%2584%2592%25E1%2585%25B4_%25E1%2584%2591%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25A9%25E1%2584%2591%25E1%2585%25B5%25E1%2586%25AF_%25E1%2584%258C%25E1%2585%25A1%25E1%2586%25A8%25E1%2584%258B%25E1%2585%25B3%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A1%25E1%2584%258C%25E1%2585%25B5%25E1%2586%25AB.jpg"/></a></figure><h2 id="8b5b9318-a8f4-4c1a-966c-c6bbbf1114ef" class=""><strong>허 준 희 ㅣ HEO JUN HEE</strong></h2><p id="fb6efe43-84e4-4a7e-9788-93421d902cac" class="">INDIE - MUSIC . WRITER . PRESS</p><p id="11f64bd1-d54e-45cb-9e89-4a18b48c7dea" class="">인디뮤지션 &amp; 독립출판인</p><p id="0a08f591-c436-4b3b-93a0-34209d9e5685" class="">독립출판사 ‘오버더데이(OVERTHEDAY)’ 대표</p><p id="e0dd42ca-58cd-4c96-9e92-04e417cd3cec" class="">
+</p><p id="f03c442d-73a0-47b2-abfa-3ea386a237a1" class=""><strong>평범함이 특별함이라 믿는 창작자.</strong></p><p id="447594cd-fec6-40d3-8237-aa3206033f6e" class="">2019년에 학술지와 학술논문으로 집필활동을 시작해 2021년 8월에 독립출판 에세이 <em>『가장말고 베프가 되기로 했다』 </em>를 출간하면서 본격적으로 작가활동을 시작했다. 현재는 1인 출판사 <em>&lt;오버더데이&gt;</em>와 문학밴드 <em>&lt;밤의소요&gt;</em>를 결성해 독립출판과 인디뮤지션으로 활동하고 있고, 노래와 이야기를 엮어 만든 공저 에세이 <em>『오늘의 당신, 어떤 가요』 </em>를 출간했으며, 2024년 2월. 과거의 ‘고통’을 ‘이로운 버팀’을 풀어낸 새 싱글 <em>&lt;내게 염려말라 하지를 마오&gt;</em>를 발매하며 더욱 활발한 활동을 펼칠 예정이다. </p><p id="fbfe932f-092a-4a0d-9b86-5a5e9711e3c4" class="">
+</p><hr id="505f16b8-30c5-4669-88a2-f502f49800ce"/><h1 id="208706f0-cf48-4d5a-9af7-f652f448e3a3" class=""><strong>■ CONNECT Link</strong></h1><p id="f50f589a-3e17-4642-9005-bfb8f32a6ad2" class="">일상에서 저마다의 예술을 하는 분들과 교류하고 싶습니다. 저의 음악과 활동에 관심이 있으신 분께서는 아래 인스타를 팔로우 해주세요 :)</p><figure id="2fb0b1e5-28d2-4ab6-bf3d-3ce58e997edb"><a href="https://www.instagram.com/junhee_heo/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Instagram (@junhee_heo)</div><div class="bookmark-description">Instagram photos and videos</div></div><div class="bookmark-href"><img src="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" class="icon bookmark-icon"/>https://www.instagram.com/junhee_heo/</div></div><img src="https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/422813558_1500791613984746_3641666039030144344_n.jpg?stp=dst-jpg_s100x100&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=3fd06f&amp;_nc_ohc=jJTyjzRUMZcAX8MJOo6&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;oh=00_AfDBkmqOphxHcGb-6Qqnz_Doh1ioIV1V_2LI1ydA5qbcWA&amp;oe=65BA2F09" class="bookmark-image"/></a></figure><p id="b636e582-b00e-426f-92a5-428e6d0e47bd" class="">
+</p><figure id="f830a16e-f1af-4491-804c-87d2c7a80a04" class="image" style="text-align:center"><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/junhee_heo_qr.png"><img style="width:240px" src="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6/junhee_heo_qr.png"/></a><figcaption>              허준희 인스타 QR코드</figcaption></figure><p id="537a12cb-4763-4327-a1b8-621ed2a25ef0" class="">✉️ brown1103@naver.com</p><h3 id="803a8e55-f0b0-4f32-bd65-0d56051ef7c0" class=""><a href="%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%B2%E1%84%83%E1%85%A9%20%E1%84%86%E1%85%A9%E1%84%85%E1%85%B3%E1%86%AB%E1%84%8E%E1%85%A2%20%E1%84%89%E1%85%AE%E1%84%86%E1%85%A1%E1%86%AD%E1%84%8B%E1%85%B3%E1%86%AB%20%E1%84%87%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B5%20%E1%84%8B%E1%85%A5%E1%84%83%E1%85%AE%E1%84%8B%E1%85%AF%E1%86%BB%E1%84%8B%E1%85%B3%E1%86%AF,%20%E1%84%87%E1%85%A5%E1%84%90%E1%85%B5%E1%84%82%E1%85%B3%E1%86%AB%20%20851ca8a1f31f42c2b8b71465eb5ac7e6.html"><mark class="highlight-orange"><strong>맨 위로 올라가기</strong></mark></a></h3><p id="9b05bc7f-3124-447c-a2ee-1f0819bcef69" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
